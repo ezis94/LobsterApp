@@ -1,0 +1,13 @@
+C:\Users\edgrau\source\repos\WorkshopApp\WorkshopApp\WorkshopApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\edgrau\source\repos\WorkshopApp\WorkshopApp\WorkshopApp\obj\Debug\netstandard2.0\View\LoginPage.xaml.g.cs
+C:\Users\edgrau\source\repos\WorkshopApp\WorkshopApp\WorkshopApp\obj\Debug\netstandard2.0\View\MenuPage.xaml.g.cs
+C:\Users\edgrau\source\repos\WorkshopApp\WorkshopApp\WorkshopApp\obj\Debug\netstandard2.0\View\ProductPage.xaml.g.cs
+C:\Users\edgrau\source\repos\WorkshopApp\WorkshopApp\WorkshopApp\obj\Debug\netstandard2.0\WorkshopApp.csproj.CoreCompileInputs.cache
+C:\Users\edgrau\source\repos\WorkshopApp\WorkshopApp\WorkshopApp\obj\Debug\netstandard2.0\WorkshopApp.AssemblyInfoInputs.cache
+C:\Users\edgrau\source\repos\WorkshopApp\WorkshopApp\WorkshopApp\obj\Debug\netstandard2.0\WorkshopApp.AssemblyInfo.cs
+C:\Users\edgrau\source\repos\WorkshopApp\WorkshopApp\WorkshopApp\obj\Debug\netstandard2.0\WorkshopApp.dll
+C:\Users\edgrau\source\repos\WorkshopApp\WorkshopApp\WorkshopApp\obj\Debug\netstandard2.0\WorkshopApp.pdb
+C:\Users\edgrau\source\repos\WorkshopApp\WorkshopApp\WorkshopApp\bin\Debug\netstandard2.0\WorkshopApp.deps.json
+C:\Users\edgrau\source\repos\WorkshopApp\WorkshopApp\WorkshopApp\bin\Debug\netstandard2.0\WorkshopApp.dll
+C:\Users\edgrau\source\repos\WorkshopApp\WorkshopApp\WorkshopApp\bin\Debug\netstandard2.0\WorkshopApp.pdb
+C:\Users\edgrau\source\repos\WorkshopApp\WorkshopApp\WorkshopApp\obj\Debug\netstandard2.0\XamlC.stamp

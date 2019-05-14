@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Page:BasePage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WorkshopApp.View.ProductPage"
+             xmlns:Page="clr-namespace:WorkshopApp.View"
+             xmlns:ViewModel="clr-namespace:WorkshopApp.ViewModel"
+                x:TypeArguments="ViewModel:ProductViewModel"
+               Title="Products"
+               x:Name="Products"
+               >
+    <ContentPage.Content>
+        <RelativeLayout x:Name="Stack" 
+                     Opacity="0"
+                     BackgroundColor="Silver">
+            <ScrollView
+                RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.5}">
+                <Frame 
+                        RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=.5}"
+                       VerticalOptions="FillAndExpand"
+                       HorizontalOptions="FillAndExpand"
+                       Margin="50"
+                       BackgroundColor="White"
+                       CornerRadius="30"
+                       BorderColor="Black">
+                    <StackLayout>
+                        <Label Text="{Binding Joke.value}"
+                               TextColor="Black"
+                               BackgroundColor="White"
+                               FontSize="80"/>
+                    </StackLayout>
+                </Frame>
+            </ScrollView>
+            <ActivityIndicator
+                Color="Red"
+                HeightRequest="50"
+                HorizontalOptions="CenterAndExpand"
+                IsRunning="{Binding isBusy}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.5 }"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=.5, Constant=-25}">
+
+            </ActivityIndicator>
+            <Button
+                BackgroundColor="Green"
+                TextColor="White"
+                Text="Get Joke"
+                VerticalOptions="EndAndExpand"
+                Command ="{Binding getJokeCommand}"
+                RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.8}"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=.5, Constant=-50}"
+                />
+        </RelativeLayout>
+    </ContentPage.Content>
+</Page:BasePage>

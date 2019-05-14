@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Page:BasePage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WorkshopApp.View.MenuPage"
+             xmlns:Page="clr-namespace:WorkshopApp.View"
+             xmlns:ViewModel="clr-namespace:WorkshopApp.ViewModel"
+                x:TypeArguments="ViewModel:MenuViewModel"
+               Title="Menu">
+    <ContentPage.Content >
+        <StackLayout >
+            <Button
+                BackgroundColor="Teal"
+                Text="Logout"
+                TextColor="White"
+                FontSize="Large"
+                Clicked="Handle_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</Page:BasePage>

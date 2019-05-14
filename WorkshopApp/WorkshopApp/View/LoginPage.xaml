@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Page:BasePage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:CustomRendered="clr-namespace:WorkshopApp.View.CustomRendered"
+             xmlns:Page="clr-namespace:WorkshopApp.View"
+             xmlns:ViewModel="clr-namespace:WorkshopApp.ViewModel"
+             x:TypeArguments="ViewModel:LoginViewModel"
+             
+             x:Class="WorkshopApp.View.LoginPage">
+    <ContentPage.Content>
+        <StackLayout x:Name="layout" BackgroundColor="{StaticResource Accent}">
+            <Image 
+                x:Name="Lobster"
+                Opacity="0"
+                Source="lobsternew.png" 
+                Margin="0,50,0,20" 
+                HeightRequest="100"/>
+            <Entry 
+                x:Name="username" 
+                Text="{Binding username}" 
+                Placeholder="Enter your username" 
+                PlaceholderColor="Black" 
+                TextColor=" Black" 
+                BackgroundColor="White" />
+            <Entry 
+                x:Name="password" 
+                Text="{Binding password}" 
+                Placeholder="Enter your password" 
+                PlaceholderColor="Black" 
+                TextColor=" Black" 
+                BackgroundColor="White" 
+                IsPassword="true"/>
+            <CustomRendered:CustomRenderedButton 
+                x:Name="submit" 
+                Text="Submit" 
+                TextColor="White" 
+                BackgroundColor="Black" 
+                Command="{Binding SubmitCommand}"/>
+            <ActivityIndicator 
+                IsRunning="{Binding isBusy}" 
+                Color="Yellow"/>
+            <Label 
+                x:Name="result" 
+                Text="{Binding result}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</Page:BasePage>
